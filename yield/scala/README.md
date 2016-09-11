@@ -5,8 +5,8 @@
     
 # Docker
 
-    docker build -t confusions-scala .
-    docker run -it --rm --name confusions-scala-running confusions-scala
+    docker build -t confusions-yield-scala .
+    docker run -it --rm --name confusions-yield-scala-running confusions-yield-scala
 
 # Expected output
     

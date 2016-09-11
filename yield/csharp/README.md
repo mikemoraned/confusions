@@ -5,8 +5,8 @@
 
 # Docker
 
-    docker build -t confusions-csharp .
-    docker run -it --rm --name confusions-csharp-running confusions-csharp
+    docker build -t confusions-yield-csharp .
+    docker run -it --rm --name confusions-yield-csharp-running confusions-yield-csharp
 
 # Expected output
 

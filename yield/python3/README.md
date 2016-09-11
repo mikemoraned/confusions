@@ -4,8 +4,8 @@
     
 # Docker
 
-    docker build -t confusions-python3 .
-    docker run -it --rm --name confusions-python3-running confusions-python3
+    docker build -t confusions-yield-python3 .
+    docker run -it --rm --name confusions-yield-python3-running confusions-yield-python3
     
 # Expected output
 
