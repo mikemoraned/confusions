@@ -12,10 +12,14 @@ class Main:
             yield self.work(i)
 
     def run(self):
-        strings = self.some_strings(10)
+        print("creating strings")
+        strings = self.some_strings(3)
+        print("doing first iter")
         for s in strings:
             print(s)
+        print("doing second iter")
         for s in strings:
             print(s)
+        print("done")
 
 Main().run()

@@ -20,13 +20,17 @@ namespace ConsoleApplication
 
         public static void Main(string[] args)
         {
-            var strings = SomeStrings(10);
+            Console.WriteLine("creating strings");
+            var strings = SomeStrings(3);
+            Console.WriteLine("doing first iter");
             foreach(var s in strings) {
                 Console.WriteLine(s);
             }
+            Console.WriteLine("doing second iter");
             foreach(var s in strings) {
                 Console.WriteLine(s);
             }
+            Console.WriteLine("done");
         }
     }
 }
