@@ -22,6 +22,6 @@ So, enter [Python](./yield/python3/README.md), and why I wrote up this confusion
 
 Debugging of other peoples code is typically where I find the semantics problematic i.e. when you evaluate the generator, the values get consumed, and you're left wondering why the code has changed behaviour. Second in terms of frequency of head-banging is re-using the same 'collection' twice, since here you're left with an empty collection, and nothing to iterate over.
 
-Conclusions? I'm not too much of a newbie to Python to say its "yield" semantics are a bad thing, but they very much definitely need to be understood. In C#, as long as you stay away from relying too much on the exact evaluation order, you can use "yield" fairly safely as a shortcut syntax for a lazily evaluated collection. In Scala? Well, it seems pretty safe to use it anywhere, but I don't have much call to use Scala nowadays; I'll leave you to draw your own conclusions from that :-)
+Conclusions? I'm too much of a newbie to Python to say its "yield" semantics are a bad thing, but they definitely need to be understood. In C#, as long as you stay away from relying too much on the exact evaluation order, you can use `yield` fairly safely as a shortcut syntax for a lazily evaluated collection. In Scala? Well, it seems pretty safe to use it anywhere, but I don't have much call to use Scala nowadays; I'll leave you to draw your own conclusions from that :-)
 
 
