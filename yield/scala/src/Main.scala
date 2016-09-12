@@ -13,17 +13,25 @@ object Main {
       yield work(i)
   }
 
+  def someStringsUsingIterator(length: Int) = {
+    for (i <- (0 until length).iterator)
+      yield work(i)
+  }
+
   def main(args: Array[String]) {
-    println("creating strings")
-    val strings = someStrings(3)
-    println("doing first iter")
-    for (s <- strings) {
-      println(s)
+    val fns = List(someStrings _, someStringsUsingIterator _);
+    for (fn <- fns) {
+      println("creating strings")
+      val strings = fn(3)
+      println("doing first iter")
+      for (s <- strings) {
+        println(s)
+      }
+      println("doing second iter")
+      for (s <- strings) {
+        println(s)
+      }
+      println("done")
     }
-    println("doing second iter")
-    for (s <- strings) {
-      println(s)
-    }
-    println("done")
   }
 }
